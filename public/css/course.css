@@ -1,0 +1,13 @@
+.search-bar{
+    background: hsl(252, 30%, 95%);
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+}
+
+.search-bar input[type="search"]{
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: hsl(252, 30%, 17%);
+}

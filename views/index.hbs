@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnEase</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container nav_container">
+            <a href="/">
+                <h4>LearnEase</h4>
+            </a>
+            <ul class="nav_menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/courses">Courses</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>Grow your skills to advance your career path</h1>
+                <p>Discover our top-rated courses designed to elevate your coding skills and transform you into a
+                    proficient coder and web developer. Our carefully curated selection covers a wide range of topics,
+                    including programming languages, web development frameworks, and essential tools.</p>
+                <a href="/courses" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="header_right">
+                <div class="header_right-image">
+                    <img src="/public/images/home/1.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="categories">
+        <div class="container categories_container">
+            <div class="categories_left">
+                <h1>Categories</h1>
+                <p>From exploring the latest advancements in blockchain technology to discussing creative design
+                    strategies or financial insights, it fosters a rich environment for interdisciplinary collaboration
+                    and knowledge sharing across various fields.</p>
+                <a href="/" class="btn btn-primary">Learn more</a>
+            </div>
+            <div class="categories_right">
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-bitcoin-circle"></i></span>
+                    <h5>Blockchain</h5>
+                    <p>Digital ledger storing transactions, trustless network....</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-bitcoin-circle"></i></span>
+                    <h5>Graphic Design</h5>
+                    <p>Visual communication, creativity, aesthetics....</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-bitcoin-circle"></i></span>
+                    <h5>Finance</h5>
+                    <p>Money management, investments, banking....</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-bitcoin-circle"></i></span>
+                    <h5>Marketing</h5>
+                    <p>Promotion, advertising, branding, market research....</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-bitcoin-circle"></i></span>
+                    <h5>Music</h5>
+                    <p>Melody, rhythm, harmony, composition, performance....</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-puzzle-piece"></i></span>
+                    <h5>Business</h5>
+                    <p>Entrepreneurship, management, strategy, operations....</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="coures">
+        <h2 style="margin-top: 11rem;">Our Popular Courses</h2>
+        <div class="container courses_container">
+            {{#each service}}
+            <article class="course">
+                <div class="course_image">
+                    <img style="height: 211px;" src="{{this.icon}}" alt="">
+                </div>
+                <div class="course_info">
+                    <h4>{{this.title}}</h4>
+                    <p>{{this.description}}</p>
+                    <a href="{{this.link1}}" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            {{/each}}
+        </div>
+
+    </section>
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs_container">
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>What programming languages do I need to learn for web development?</h4>
+                    <p>Essential languages include HTML, CSS, and JavaScript. Additional languages like Python and Ruby
+                        can also be beneficial.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>What are some common web development frameworks and when should I use them?</h4>
+                    <p>Examples include React, Angular, and Vue.js for front-end development, and Node.js and Django for
+                        back-end development.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>What are the essential skills for becoming a web developer?</h4>
+                    <p>Proficiency in HTML, CSS, JavaScript, problem-solving, debugging, version control, and
+                        familiarity with frameworks and libraries.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How can I improve my problem-solving abilities in coding?</h4>
+                    <p>Practice solving coding challenges, participate in coding competitions, and collaborate with
+                        other developers on projects.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>What resources or tutorials do you recommend for learning web development?</h4>
+                    <p>Some popular platforms include Codecademy, freeCodeCamp, MDN Web Docs, W3Schools, and YouTube
+                        tutorials from reputable channels.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>What is the difference between front-end and back-end development?</h4>
+                    <p>Front-end development focuses on the user interface and client-side coding, while back-end
+                        development handles server-side logic and databases.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How can I make my website load faster?</h4>
+                    <p>Optimize image sizes, minimize HTTP requests, use caching, compress files, enable GZIP
+                        compression, and reduce unnecessary scripts.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How can I get started with coding?</h4>
+                    <p>Start with online tutorials, coding bootcamps, or courses that provide step-by-step guidance.
+                        Practice regularly and build projects.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How can I secure my website from vulnerabilities and attacks?</h4>
+                    <p>Follow security best practices, sanitize user input, use secure authentication, apply encryption,
+                        and keep software up to date.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4> What are the best practices for SEO (Search Engine Optimization) in web development?</h4>
+                    <p>Some best practices include using descriptive meta tags, optimizing page loading speed, creating SEO-friendly URLs, and producing high-quality content.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="container testimonials_container">
+        <h2>Students Testimonials</h2>
+        <div class="testimonial_head">
+
+            <article class="testimonial">
+                <div style="margin-left: 47px;">
+                    <div class="avtar">
+                        <img src="/public/images/avtar/5.png" alt="">
+                    </div>
+                    <div class="testimonial_info">
+                        <h5>Diana Ayi</h5>
+                        <small>Student</small>
+                    </div>
+                </div>
+                <div class="testimonial_body">
+                    <p>Let me just say, this web developer website is a game-changer! Whether you're a beginner or an advanced coder, this platform has got you covered. This is the place to be. Highly recommended.</p>
+                </div>
+            </article>
+
+            <article class="testimonial">
+                <div style="margin-left: 47px;">
+                    <div class="avtar">
+                        <img style="margin-top: -9px;" src="/public/images/avtar/2.png" alt="">
+                    </div>
+                    <div class="testimonial_info">
+                        <h5>Robert Junior</h5>
+                        <small>Web Developer</small>
+                    </div>
+                </div>
+                <div class="testimonial_body">
+                    <p>I don't have words to thank this man, I'm really grateful to have this channel and website in my daily routine. If you're a mere beginner, then you can trust this guy and can put your time into his content.</p>
+                </div>
+            </article>
+
+            <article class="testimonial">
+                <div style="margin-left: 47px;">
+                    <div class="avtar">
+                        <img src="/public/images/avtar/3.png" alt="">
+                    </div>
+                    <div class="testimonial_info">
+                        <h5>Tom</h5>
+                        <small>Web Develper</small>
+                    </div>
+                </div>
+                <div class="testimonial_body">
+                    <p>For everyone who wants to level up their #Coding and #Dev skills - seriously, this channel is for you! Both basic and advanced stacks are covered on this channel, and one can learn according to his skill levels.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="/" class="footer_logo">
+                    <h4>LearnEase</h4>
+                </a>
+                <p>Thank you for visiting this website! We genuinely hope that your experience here proves to be valuable and beneficial.</p>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Primacy</h4>
+                <ul class="privacy">
+                    <li><a href="/">privacy Policy</a></li>
+                    <li><a href="/">Terms and Conditions</a></li>
+                    <li><a href="/">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 1234567890</p>
+                    <p>dev@gmail.com</p>
+                </div>
+                <ul class="footer_socials">
+                    <li><a href="https://www.facebook.com/"><i class="uil uil-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="uil uil-instagram-alt"></i></a></li>
+                    <li><a href="https://www.twitter.com/"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="uil uil-linkedin-alt"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer_copyright">
+            <small>Copyright &copy; LearnEase</small>
+        </div>
+
+    </footer>
+
+
+    <script src="/nav.js"></script>
+
+</body>
+
+</html>
